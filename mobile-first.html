@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Mobile First - Media Queries</title>
+<style>
+
+/* Etapa 1: regras de uso geral, ou seja, regras com formatações que vão valer para o site como um todo, sem importar muito o disposito */
+
+* {box-sizing: border-box;}
+
+html {font-size: 16px;}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: lightblue;
+}
+
+span { 
+    background-color: darkblue;
+    color: white;
+    padding: 5px;
+}
+
+#container {
+    background-color: white;
+    width: 95vw;
+    margin: auto;
+    padding: 0.5rem;
+}
+
+img {max-width: 100%;}
+figure {margin: 0;}
+
+h1 {
+    font-size: 1.8rem;
+    color: peru;
+}
+
+h2 {font-size: 1.3rem;}
+
+
+p {font-size: 1rem;}
+
+/* Etapa 2: regras de uso CONDICIONAL, ou seja, vão funcionar somente se as determinadas condições forem atendidas */
+
+/* Media Query */
+@media screen and (min-width: 630px ) {
+    body {
+        background-color: burlywood;}
+        /* Alteramos o tamanho do font-size do elemento raíz. Desta forma, todas as regras que utilizam a medida REM, automaticamente recebem o novo tamanho como referência */
+        html {font-size: 20px;}
+}
+
+/* Crie uma regra condicional para telas a partir de 774px de largura com as seguintes alterações:
+
+-div container
+    - tamanho máximo de 700px de largura
+    - borda arredondada de 8px
+    - sombra
+
+- título h1 deve ficar centralizado
+- cor do span deve mudar para preto
+- subtitulos h2 passam a ter uma borda à esquerda e um padding à esquerda do 1rem
+*/
+
+@media screen and (min-width: 774px) {
+    #container {max-width: 774px; border-radius: 8px; box-shadow: 5px 10px;}
+    h1 {text-align: center;}
+    h2 {border-left: 5px solid black; padding-left: 1rem;}
+    span {color: black; background-color: wheat;}
+}
+
+</style>
+</head>
+<body>
+<div id="container">
+    <h1>Media Queries - Abordagem <span>Mobile First</span> </h1>
+	<hr>    
+    <h2>Conceito</h2>
+    <p>São regras especiais em que criamos alterações na página web de acordo com <b>determinadas condições</b>.</p>
+    <p>Também conhecidas como <b>breakpoints</b> (pontos de adaptação).</p>
+
+    <h2>Aplicação</h2>
+    <p>Media Queries são aplicadas de acordo com a estratégia usada para design responsivo:</p>
+    <ul>
+        <li><b>Mobile First: telas pequenas para grandes</b></li>
+        <li>Desktop First: telas grandes para pequenas</li>
+    </ul>
+	<figure>
+        <img src="imagens/front-end.jpg" alt="">
+        <figcaption>Design Responsivo</figcaption>
+    </figure>
+</div>   
+</body>
+</html>

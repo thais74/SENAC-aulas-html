@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Responsivo</title>
+    <style>
+        * {box-sizing: border-box;}
+        html {font-size: 16px;}
+        body {
+            font-family: Verdana, sans-serif;
+            background-color: beige;
+        }
+
+        #container{
+            box-shadow: black 0px 0px 10px;
+            padding: 3px;
+        }
+
+        header {
+            background-color: plum;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        #article1 {
+            background-color: pink;
+            border-radius: 10px;
+            
+        }
+
+        #article2 {
+            background-color: palevioletred;
+            border-radius: 10px;
+            
+        }
+
+        #article3 {
+            background-color: burlywood;
+            border-radius: 10px;
+            
+        }
+
+        h1, h2, p {
+            margin: 5;
+            padding: 5px;
+        }
+        
+        h2, p {padding: 0.5rem;}
+
+        article {min-height: 300px;}
+
+        @media screen and (min-width: 700px) {
+            header {display: flex;
+            justify-content: space-between;
+            height: 80px;
+            align-items: center;}
+        }
+
+        nav {
+            height: 40px;
+            width: 50vw ;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <div id="container">
+
+        <!-- Cabeçalho -->
+        <header>
+            <h1>Flexbox</h1>
+
+            <nav>
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+            </nav>
+
+        </header>
+
+
+        <!-- Área de todo conteúdo -->
+        <main>
+            <article id="article1">
+                <h2>Coluna A</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatem consequuntur optio temporibus quisquam reprehenderit aut. Totam autem corporis dolore!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque mollitia architecto, perferendis unde nostrum incidunt nemo sequi vel quis exercitationem iure sit non libero provident, tenetur, hic perspiciatis recusandae dolore.</p>
+            </article>
+
+            <article id="article2">
+                <h2>Coluna B</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia magni natus nihil esse cumque illum.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </article>
+
+            <article id="article3">
+                <h2>Coluna C</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati maxime corrupti deserunt. Tempore consequatur, odit nobis unde dolorem ipsum, ratione consectetur iste voluptate assumenda quod atque aperiam expedita?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam rerum, dolorem voluptatem quia saepe architecto.</p>
+            </article>
+        </main>
+
+
+
+        <footer>
+
+        </footer>
+
+    </div>
+
+    
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Desktop First - Media Queries</title>  
+<style>
+
+* {box-sizing: border-box;}
+
+html {
+    font-size: 20px;
+}
+
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: lightgreen;
+}
+
+span { 
+    background-color: darkgreen;
+    color: white;
+    padding: 5px;
+}
+
+h1 {
+    text-align: center;
+    color: plum;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    border-left: solid 10px;
+    padding-left: 1rem;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+p { font-size: 1.1rem;}
+
+/* Etapa 2 */
+@media screen and (max-width: 870px) {
+    html {font-size: 18px;}
+     
+    h1 {background-color: wheat;
+        color: black;
+
+    }
+
+    body {background-color: transparent;}
+
+    h2 {
+        border: none;
+        padding-left: 0;
+    }
+
+    hr {
+        width: 50%;
+        height: 5px;
+        background-color: palegoldenrod;
+        border: none;
+    }
+}
+
+
+</style>  
+</head>
+<body>
+<div id="container">
+    <h1>Media Queries - Abordagem <span>Desktop First</span></h1>
+    <hr>
+    <h2>Conceito</h2>
+    <p>São regras especiais em que criamos alterações na página web de acordo com <b>determinadas condições</b>.</p>
+    <p>Também conhecidas como <b>breakpoints</b> (pontos de adaptação).</p>
+
+    <h2>Aplicação</h2>
+    <p>Media Queries são aplicadas de acordo com a estratégia usada para design responsivo:</p>
+    <ul>
+        <li>Mobile First: telas pequenas para grandes</li>
+        <li><b>Desktop First: telas grandes para pequenas</b></li>
+    </ul> 
+	<figure>
+        <img src="imagens/front-end.jpg" alt="">
+        <figcaption>Design Responsivo</figcaption>
+    </figure>
+</div>    
+</body>
+</html>

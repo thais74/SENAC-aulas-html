@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+</head>
+
+<body>
+    
+    <h1>Tags e Atributos para Formulários</h1>
+    <hr>
+    <p>Interface com campos para entregada e seleção de dados.</p>
+
+<form action="" method="post">
+    
+    <!-- Nome -->
+    <p>
+        <label for="nome">Nome:</label>
+        <input required placeholder="Digite seu nome" type="text" name="nome" id="nome">
+    </p>
+
+
+    <!-- E-mail -->
+    <p>
+        <label for="email">E-mail:</label>
+        <input required type="email" name="email" id="email">
+    </p>
+
+    <p>Deseja receber informativos</p>
+    <input type="radio" name="informativos" id="sim">
+    <label for="sim">Sim</label>
+
+    <input type="radio" name="informativos" id="não">
+    <label for="não">Não</label>
+
+
+
+    <p>Escolha as tecnologias de sua preferência</p>
+
+    <input type="checkbox" name="tecnologias" id="html">
+    <label for="">HTML</label>
+
+    <input type="checkbox" name="tecnologias" id="css">
+    <label for="">CSS</label>
+
+    <input type="checkbox" name="tecnologias" id="js">
+    <label for="">JS</label>
+
+
+
+
+
+    <!-- Data de Nascimento -->
+    <p>
+        <label for="date">Data de Nascimento</label>
+        <input type="date" name="data" id="data" min="1910-01-01" max="2023-03-03">
+    </p>
+
+
+    <!-- Assunto -->
+    <p>
+        <label for="">Assunto:</label>
+        <select required name="assunto" id="assunto">
+            <option value=""></option>
+            <option value="">Reclamações</option>
+            <option value="">Me dá dinheiro</option>
+            <option value="">Sem assunto</option>
+        </select>
+        
+    </p>
+    
+
+    
+    <!-- Mensagem -->
+    <p>
+        <label for="mensagem">Mensagem(mínimo de 5 e máximo de 50):</label> <br>
+        <textarea minlength="5" maxlength="50" name="msg" id="" cols="30" rows="8"></textarea>
+    </p>
+    
+     
+    
+    <!-- Botão -->  
+    <label for="botao"></label>
+    <button type="submit">Envie aqui</button>
+
+</form>
+
+    
+
+</body>
+
+
+
+
+
+</html>

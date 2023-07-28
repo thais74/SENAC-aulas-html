@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades de Medida</title>
+
+    <style>
+        * {box-sizing: border-box;}
+        body {font-family: verdana;}
+
+        /* 16px é o padrão */
+        html {font-size: 16px;}
+
+        h1{font-size: 3rem;}        
+        h2 {font-size: 2rem;}   
+        h3 {font-size: 1.5rem;}   
+        p {font-size: 1rem;}   
+
+        #exemplo-viewport {
+            border: solid 3px skyblue;
+            width: 400px;
+            margin: auto;
+            height: 70vh;
+        }
+
+        #um {
+            background-color: pink;
+            width: 50vw;
+            height: 10vh;
+        }
+
+        #dois {
+            background-color: palevioletred;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <h1>Unidades de medida para design responsivo</h1>
+
+    <!-- Unidades já conhecidas/usadas: 
+    px (pixel) e % (porcentagem) -->
+    
+    <h2>REM (R-EME)</h2>
+    <p>A medida R-EME é relativa ao <code>font-size</code> do elemento <b>raíz HTML</b></p>
+    
+    <h3>Lorem ipsum dolor sit.</h3>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quia eius id!</p>
+    
+    <ul>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+    </ul>
+
+    <hr>
+    <h2>VW e VH</h2>
+    <p>As medidas <abbr title="Viewport Width"> VW (Viewport Width)</abbr> 
+    e <abbr title="Viewport Height"> VH (Viewport Height)</abbr> são relativas á área de visualização do navegador (chamada de viewport)</p>
+    <p>VW diz respeito á largura da viewport e VH diz respeito à altura da viewport</p>
+
+    <div id="exemplo-viewport">
+        <div id="um">
+            <h3>UM</h3>
+            <p>Lorem ipsum dolor sit.</p>
+        </div>
+        <div id="dois">
+            <h3>DOIS</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+        </div>
+    </div>
+    
+
+
+</body>
+
+
+
+</html>

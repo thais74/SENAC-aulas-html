@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Simplicity</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    
+    <!-- Cabeçalho -->
+    <header>
+        <div class="limitador">
+            <h1>
+                <a href="index.html">
+                    Simplicity
+                </a>
+            </h1>
+            <nav>
+                <!-- Esse subtítulo servirá
+                posteriormente como botão
+                de acionamento do menu responsivo -->
+                <h2><a href="">Menu &equiv;</a></h2>
+
+                <!-- Lista de links do menu
+                que em telas pequenas ficará escondida por
+                padrão, e em telas maiores será exibida 
+                lateralmente. -->
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Área de conteúdo -->
+    <main>
+        <article class="limitador conteudo">
+            <h2>Contato</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex reprehenderit iste mollitia ab numquam odit, laborum dignissimos illum architecto voluptatem pariatur illo ratione perferendis dolor beatae recusandae cum nostrum delectus!</p>
+            <p>Ex error distinctio ut, illum officia maxime ullam suscipit excepturi voluptate quia nobis iusto veniam magni quaerat delectus. Veritatis officiis ad similique ut saepe, architecto expedita iusto fugiat incidunt sed?</p>
+            <p>Magni inventore totam fuga laboriosam quae necessitatibus hic impedit vel nostrum. Sequi, praesentium, recusandae, sint quam quis nisi assumenda error harum placeat excepturi suscipit ex repudiandae reiciendis. Cumque, veritatis reiciendis.</p>
+
+            
+            <form action="" method="post">
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input required type="text" name="" id="">   
+                </div>
+
+
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input required type="email" name="email" id="email">   
+                </div>
+
+                <div>
+                    <label for="data">Data de Nascimento:</label>
+                    <input type="date" name="date" id="date" min="1910-01-01">  
+                </div>
+
+                <div>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" name="telefone" id="telefone">   
+                </div>
+
+                <div>
+                    <label for="idade">Idade:</label>
+                    <input type="number" name="number" id="number" min="18" max="110">   
+                </div>
+
+                <div>
+                    <p>Deseja receber informações</p>
+
+                    <input type="radio" name="informativos" id="sim">
+                    <label for="Sim">Sim</label>
+                    
+                    <input type="radio" name="informativos" id="não">
+                    <label for="Não">Não</label>
+                    
+                </div>
+
+                <div>
+                    <p>Interesses</p>
+
+                    
+                    <input type="checkbox" name="interesses" id="design">
+                    <label for="design">Design</label>
+                    
+                    <input type="checkbox" name="interesses" id="marketing">
+                    <label for="marketing">Marketing</label>
+                    
+                    <input type="checkbox" name="interesses" id="programacao">
+                    <label for="programacao">Programação</label>
+
+                </div>
+
+                <div>
+                    <label for="assunto">Assunto:</label>
+                    <select name="assunto" id="assunto">
+                        <option value=""></option>
+                        <option>Informações</option>
+                        <option>Reclamações</option>
+                        <option>Elogios</option>
+                        <option>Outros</option>
+                      
+                    </select>
+                </div>
+
+                <div>
+                    <label for="mensagem">Mensagem:</label> <br>
+                    <textarea required name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                    <button type="submit">Enviar dados</button>
+                </div>
+
+            </form>
+
+            
+        </article>
+    </main>
+    
+    <!-- Rodapé -->
+    <footer>
+        <p>Simplicity é um site fictício desenvolvido 
+        educacionalmente <br> Senac Penha &copy; 2023 
+        </p>
+    </footer>
+
+</body>
+</html>

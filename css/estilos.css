@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Raleway:wght@400;700;800&display=swap');
+
+* { box-sizing: border-box; }
+
+html { font-size: 14px; }
+
+body, h1, h2, p, figure, .menu {
+    margin: 0;
+    padding: 0;
+}
+
+img { max-width: 100%; }
+
+body {
+    font-family: "Noto Sans", Verdana, Arial, sans-serif;
+    background-color: white;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+h1 a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-family: Raleway, sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+header {
+    height: 10vh;
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    background-color: white;
+
+}
+
+header .limitador {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 a {
+    color: black;
+    font-size: 1.2rem;
+    padding: 1rem;
+    display: inline-block;
+}
+
+nav a:hover, nav a:focus {
+    background-color: grey;
+}
+
+.menu {
+    list-style: none;
+    display: none;
+}
+
+.menu a {
+    color: black;
+    height: 50px;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.destaque {
+    background-image: url(../imagens/fundo-destaque.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.destaque h2, .destaque p {
+    color: white;
+    text-align: center;
+
+    animation-name: animaDestaques;
+    animation-duration: 2s;
+}
+
+.destaque h2 {
+    font-size: clamp(3rem, 10vw, 6rem);
+    font-family: Raleway, sans-serif;
+    font-weight: 800;
+
+    animation-name: animaDestaques;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.destaque p {
+    font-size: clamp(1.5rem, 1.5vw, 2rem );
+    font-weight: bold;
+
+    animation-name: animaDestaques;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+/* Exercícios
+1) Crie uma regra usando o seletor "nav h2 a"
+com: cor de texto preta, tamanho de fonte de 1.2rem
+espaçamento interno de 1rem, display como inline-block
+
+2) Crie uma regra para que ao passar o mouse nos links
+"Menu=", Home, Produtos, Serviços e Contato, a cor de fundo mude para um tom de cinza qualquer.
+
+3) Crie uma regra para remover os marcadores da lista
+com a classe chamada menu
+
+4) Crie uma regra para os links da lista menu com: cor de texto preta, negrito, flex alinhado ao centro totalmente, altura de 50px*/
+
+
+/* Etapa 1: criar regra */
+@keyframes animaDestaques {
+    from {
+        opacity: 0;
+        transform: translateY(-600px);
+    }
+
+    to {opacity: 1;}
+}
+
+article h2 {
+    padding: 1rem;
+    font-family: Raleway, sans-serif;
+    color: rgb(66, 66, 66);
+    font-size: 1.6rem;
+}
+
+article p, article address {
+    padding: 0.5rem 0;
+    font-size: 1.3rem;
+}
+
+article address {font-size: normal;}
+
+.front-end, .historia, .localizacao, footer {
+    text-align: center;
+}
+
+.historia {
+    background-image: url(../imagens/fundo-madeira.jpg );
+    background-attachment: fixed;
+}
+
+.historia h2 {
+    color: white;
+    text-shadow: 12px;
+}
+
+.historia iframe {
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 2rem;
+}
+
+.localizacao iframe {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.front-end figure {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.limitador {
+    width: 95vw;
+    margin: auto;
+    
+}
+
+footer {
+    background-color: black;
+    color: white;
+    height: 30vh;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo {
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+.conteudo h2 {
+    padding-left: 0;
+    text-align: center;
+}
+
+table, th, td {
+    border: solid 2px black;
+    border-collapse: collapse;
+}
+
+
+table {
+    margin: auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+caption {
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding-bottom: 0.5rem;
+}
+
+th {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+
+td {
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+td:first-child {text-transform: uppercase;}
+
+td:nth-child(2) {text-align: center;}
+
+td:last-child {
+    font-weight: bold;
+    text-align: center;
+}
+
+tr:nth-child(even) {background-color: antiquewhite;}
+
+tr:nth-child(odd) {background-color: rgb(179, 179, 179);}
+
+.galeria-servicos {
+    text-align: center;
+    
+}
+
+.galeria-servicos img {
+    border-radius: 100px;
+    box-shadow: 5px 2px 15px;
+    filter: grayscale();
+    margin: 15px;
+ 
+}
+
+.galeria-servicos img:hover {
+    filter: none;
+    transform: scale(1.2);
+}
+
+form {
+    width: 95%;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+form div {
+    margin-top: 1rem;
+}
+
+input:not([type=radio]):not([type=checkbox]), select, textarea {
+    border: none;
+    width: 100%;
+    padding: 1%;
+    box-shadow: darkgray 0 0 5px;
+    height: 40px;
+    font-size: 1.1rem;
+}
+
+
+textarea {
+    height: auto;
+    resize: none;
+}
+
+label {font-size: 1.2rem;}
+
+button {
+    border: none;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover, button:focus {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 530px) {
+    nav h2 {display: none;}
+
+    .menu {
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.3rem;
+    }
+
+    nav {width: 70%;}
+}
+
+@media screen and (min-width: 1000px) {
+    html {font-size: 16px;}
+    .limitador {max-width: 1000px;}
+}
